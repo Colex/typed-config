@@ -1,6 +1,7 @@
-# typed: false
+# typed: strict
 # frozen_string_literal: true
 
+require 'sorbet-coerce'
 require_relative './loader'
 require_relative './schema'
 
@@ -14,7 +15,7 @@ module TypedConfig
     end
 
     sig { params(config_path: T.any(Pathname, String), env: String).void }
-    def call(config_path:, env: ENV['RACK_ENV'])
+    def call(config_path:, env: T.cast(ENV['RACK_ENV'], String))
       require_relative "#{config_path}/config"
 
       settings = merge_settings([

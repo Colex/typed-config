@@ -18,9 +18,11 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.4.0'
   s.add_dependency 'deep_merge', '~> 1.2', '>= 1.2.1'
 
+  s.add_development_dependency 'rails', '~> 5.2.4'
   s.add_development_dependency 'rubocop', '~> 0.84.0'
   s.add_development_dependency 'rubocop-performance', '~> 1.6.1'
   s.add_development_dependency 'rubocop-sorbet', '~> 0.4.0'
   s.add_development_dependency 'rubocop-rspec', '~> 1.39.0'
+  s.add_development_dependency 'sorbet-coerce', '~> 0.2.7'
   s.add_development_dependency 'sorbet-runtime'
 end

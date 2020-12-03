@@ -2,5 +2,8 @@
 # frozen_string_literal: true
 
 module TypedConfig
-  VERSION = '1.2.0'
+  module Structs
+    class Settings < T::Struct
+    end
+  end
 end

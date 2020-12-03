@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 # frozen_string_literal: true
 
 require_relative 'setup'
@@ -12,6 +12,6 @@ module TypedConfig
       )
     end
 
-    config.before_configuration { preload }
+    config.before_configuration { T.unsafe(self).preload }
   end
 end
