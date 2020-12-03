@@ -12,7 +12,7 @@ settings.
 This project has been inspired by [Config](https://github.com/rubyconfig/config) and
 it's meant to be an easy drop-in replacement with type-safety.
 
-## Installing
+## Installing
 
 Add the gem to your `Gemfile`:
 ```ruby
@@ -57,7 +57,7 @@ available across the application in a `Settings` object:
 Settings.env
 Settting.support.email
 
-# Example:
+# Example:
 config.action_mailer.asset_host = "https://#{Settings.app.domain}"
 ```
 
