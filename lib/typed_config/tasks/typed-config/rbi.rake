@@ -4,7 +4,7 @@
 namespace 'typed-config' do
   task rbi: :environment do
     puts 'Generating RBI files...'
-    rbi = Config::Schema.rbi
+    rbi = TypedConfig::Schema.rbi
     FileUtils.mkdir_p(::Rails.root.join('sorbet', 'typed-config'))
     File.write(::Rails.root.join('sorbet', 'typed-config', 'structs.rbi'), rbi)
     puts 'RBI files updated in sorbet/typed-config.'
