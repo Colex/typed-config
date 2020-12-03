@@ -2,5 +2,5 @@
 # frozen_string_literal: true
 
 module TypedConfig
-  VERSION = '1.3.8'
+  VERSION = '1.3.9'
 end

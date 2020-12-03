@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email         = 'hello@alexcsantos.com'
   s.files         = `git ls-files lib rbi Gemfile* *.md`.split($/)
   s.require_paths = ['lib']
-  s.homepage      = 'https://rubygems.org/gems/typed-config'
+  s.homepage      = 'https://github.com/Colex/typed-config'
   s.license       = 'MIT'
 
   s.required_ruby_version = '>= 2.4.0'
