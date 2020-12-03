@@ -1,6 +1,6 @@
 # typed: strong
 
-::<%= schema_const_name %> = T.let(nil, Config::Structs::Settings)
+::<%= schema_const_name %> = T.let(nil, TypedConfig::Structs::Settings)
 <% structs.each do |struct_name, consts| %>
 
 class <%= struct_name %> < T::Struct
