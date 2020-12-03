@@ -18,12 +18,12 @@ module TypedConfig
       sig do
         params(
           const_name: T.nilable(String),
-          blk: T.proc.params(config: SchemaBuilder).void,
+          _blk: T.proc.params(config: SchemaBuilder).void,
         ).void
       end
-      def configure(const_name = nil, &blk)
+      def configure(const_name = nil, &_blk)
         @schema_const_name = const_name || schema_const_name
-        blk.call(schema_builder)
+        yield schema_builder
       end
 
       sig { returns(String) }
