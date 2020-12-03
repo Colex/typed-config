@@ -13,7 +13,8 @@ module TypedConfig
       return {} unless File.file?(filename)
 
       contents = File.read(filename)
-      T.cast(YAML.safe_load(ERB.new(contents).result), T::Hash[String, T.untyped])
+      yaml = YAML.safe_load(ERB.new(contents).result) || {}
+      T.cast(yaml, T::Hash[String, T.untyped])
     end
   end
 end

@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description   = 'Manage multi-environment settings with type-safety in Ruby'
   s.authors       = ['Alex Santos']
   s.email         = 'hello@alexcsantos.com'
-  s.files         = `git ls-files lib rbi Gemfile*`.split($/)
+  s.files         = `git ls-files lib rbi Gemfile* *.md`.split($/)
   s.require_paths = ['lib']
   s.homepage      = 'https://rubygems.org/gems/typed-config'
   s.license       = 'MIT'

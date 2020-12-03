@@ -13,6 +13,9 @@ Layout/FirstArrayElementIndentation:
 Naming/FileName:
   Exclude:
     - 'lib/typed-config.rb'
+Sorbet/FalseSigil:
+  Exclude:
+    - lib/generators/**/*.rb
 Style/Documentation:
   Enabled: false
 Style/TrailingCommaInArguments:
