@@ -1,10 +1,21 @@
-GEM
+PATH
+  remote: .
   specs:
+    typed-config (1.1.4)
+      deep_merge (~> 1.2, >= 1.2.1)
+      sorbet-runtime
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    deep_merge (1.2.1)
+    sorbet-runtime (0.5.6130)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  typed-config!
 
 BUNDLED WITH
    2.1.4
